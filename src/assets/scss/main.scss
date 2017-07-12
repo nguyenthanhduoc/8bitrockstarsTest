@@ -1,0 +1,22 @@
+// bootstrap-sass
+@import "base/variable-bootstrap";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+  overflow-x: hidden;
+
+  .icon {
+    display: inline-block;
+    font-size: 35px;
+    cursor: pointer;
+    opacity: 0.8;
+    margin: auto 10px;
+
+    &:hover {
+      opacity: 1;
+    }
+    &-danger {
+      color: red;
+    }
+  }
+}
