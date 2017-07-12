@@ -3,10 +3,9 @@
 ### App Demo online
 ```
 [http://nguyenthanhduoc.herokuapp.com/]
-
-**Caution:** *Sometime Heroku is overload, him ussualy throw an error with status '503 Service Unavailable'*
-*So there if that problem occur when you run app online. You can checkout source code and run it on your local*
 ```
+- Sometime Heroku is overload, him ussualy throw an error with status '503 Service Unavailable'
+- So there if that problem occur when you run app online. You can checkout source code and run it on your local
 
 ### To run local
 ```
