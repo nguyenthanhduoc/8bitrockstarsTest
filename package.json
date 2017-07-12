@@ -49,9 +49,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "./node_modules/.bin/grunt build",
+    "prestart": "./node_modules/.bin/grunt build",
     "start": "node server.js",
-    "dev": "./node_modules/.bin/grunt default"
+    "dev": "./node_modules/.bin/grunt default",
+    "postinstall": "bower install && prestart"
   },
   "repository": {
     "type": "git",
