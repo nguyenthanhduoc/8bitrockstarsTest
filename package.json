@@ -26,7 +26,8 @@
     "redux-form": "6.7.0",
     "sass-loader": "6.0.5",
     "style-loader": "0.17.0",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "2.0.3",
+    "jugglingdb": "https://github.com/juggy/jugglingdb/tarball/master"
   },
   "devDependencies": {
     "babel-core": "6.17.0",
