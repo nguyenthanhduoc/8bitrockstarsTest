@@ -1,6 +1,5 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {map, keys} from 'lodash';
 import {HomepageStateToPropsBinding, HomepageDispatchToPropsBinding} from "./HomeBind.jsx";
 import AddressForm from './components/AddressForm.jsx';
 import AddressList from './components/AddressList.jsx';
@@ -47,7 +46,6 @@ export default class Homepage extends React.Component {
     };
 
     render() {
-        let total = this.state.addressList ? this.state.addressList.length : 0;
         return (
             <div className="row">
                 <div className="row">
