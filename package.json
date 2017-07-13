@@ -31,7 +31,6 @@
     "whatwg-fetch": "2.0.3",
     "jugglingdb": "https://github.com/juggy/jugglingdb/tarball/master"
   },
-  "main": "server.js",
   "devDependencies": {
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
