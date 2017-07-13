@@ -49,7 +49,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "./node_modules/.bin/grunt build",
+    "postinstall": "./node_modules/.bin/grunt build",
     "start": "node server.js",
     "dev": "./node_modules/.bin/grunt default"
   },
