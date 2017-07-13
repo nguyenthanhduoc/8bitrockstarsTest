@@ -15,7 +15,10 @@
     "css-loader": "0.28.1",
     "express": "4.14.0",
     "firebase": "3.9.0",
+    "grunt-cli": "1.2.0",
+    "grunt-contrib-uglify": "3.0.1",
     "jquery": "3.2.1",
+    "jugglingdb": "https://github.com/juggy/jugglingdb/tarball/master",
     "lodash": "4.16.3",
     "node-sass": "4.5.3",
     "npm": "4.6.1",
@@ -28,8 +31,7 @@
     "redux-form": "6.7.0",
     "sass-loader": "6.0.5",
     "style-loader": "0.17.0",
-    "whatwg-fetch": "2.0.3",
-    "jugglingdb": "https://github.com/juggy/jugglingdb/tarball/master"
+    "whatwg-fetch": "2.0.3"
   },
   "main": "server.js",
   "devDependencies": {
