@@ -4,9 +4,9 @@ import FaCrosshairs from 'react-icons/lib/fa/crosshairs';
 
 class AddressForm extends Component {
     render() {
-        const { handleSubmit, onGetLocation } = this.props;
+        const { submit, onGetLocation } = this.props;
         return (
-            <form onSubmit={handleSubmit}  className="form-group col-md-12">
+            <form onSubmit={submit}  className="form-group col-md-12">
                 <div className="form-group col-md-2">
                     <label className="control-label">Street Name</label>
                     <Field name="streetName" type="text" component="input" className="form-control"/>
