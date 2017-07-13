@@ -2,6 +2,10 @@
   "name": "8bitTest",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "4.1.1",
+    "npm": "0.12.2"
+  },
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "1.3.4",
     "babel-polyfill": "6.23.0",
