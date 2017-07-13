@@ -1,1 +1,1 @@
-web: ./node_modules/.bin/grunt build ; node server.js
+web: node server.js
