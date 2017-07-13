@@ -9,8 +9,4 @@ app.all('/*', function(req, res, next) {
     res.sendFile('index.html', { root: __dirname });
 });
 
-app.get('*', function(req, res) {
-    res.sendFile(path.resolve(__dirname, './index.html'));
-});
-
 app.listen(port);
