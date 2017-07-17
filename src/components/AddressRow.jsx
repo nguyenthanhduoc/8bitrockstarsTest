@@ -8,6 +8,7 @@ import FaTrashO from 'react-icons/lib/fa/trash-o';
 export default class AddressRow extends Component {
     constructor(props) {
         super(props);
+        this.onChangeField = this.onChangeField.bind();
         this.state = {
             isEdit: false,
             rowData: {
@@ -55,19 +56,19 @@ export default class AddressRow extends Component {
             isEdit ?
             <tr>
                 <td>
-                    <input name="streetName" type="text" value={rowData.streetName} className="form-control" onChange={::this.onChangeField}/>
+                    <input name="streetName" type="text" value={rowData.streetName} className="form-control" onChange={this.onChangeField}/>
                 </td>
                 <td>
-                    <input name="ward" type="text" value={rowData.ward} className="form-control" onChange={::this.onChangeField}/>
+                    <input name="ward" type="text" value={rowData.ward} className="form-control" onChange={this.onChangeField}/>
                 </td>
                 <td>
-                    <input name="district" type="text" value={rowData.district} className="form-control" onChange={::this.onChangeField}/>
+                    <input name="district" type="text" value={rowData.district} className="form-control" onChange={this.onChangeField}/>
                 </td>
                 <td>
-                    <input name="city" type="text" value={rowData.city} className="form-control" onChange={::this.onChangeField}/>
+                    <input name="city" type="text" value={rowData.city} className="form-control" onChange={this.onChangeField}/>
                 </td>
                 <td>
-                    <input name="country" type="text" value={rowData.country} className="form-control" onChange={::this.onChangeField}/>
+                    <input name="country" type="text" value={rowData.country} className="form-control" onChange={this.onChangeField}/>
                 </td>
                 <td style={{textAlign: 'center', paddingTop: 0, paddingBottom: 0}}>
                     <span className="icon" title="Get your location" onClick={::this.onGetLocation}><FaCrosshairs /></span>
