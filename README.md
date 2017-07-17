@@ -2,7 +2,7 @@
 
 ### App Demo online
 ```
-http://nguyenthanhduoc.herokuapp.com/
+https://nguyenthanhduoc.herokuapp.com/
 ```
 
 ### To run local
