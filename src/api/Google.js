@@ -15,5 +15,9 @@ export function requestLocationFromLatLng(data) {
         '&key=' + config.GOOGLE_API_KEY;
     return fetch(url)
         .then(resp => resp.json())
-        .then(resp => getLocationSuccess(resp));
+        .then(resp => getLocationSuccess(resp))
+        .catch(error => {
+            alert('Website is upgrade, please comeback later !');
+            console.log(error);
+        });
 }
