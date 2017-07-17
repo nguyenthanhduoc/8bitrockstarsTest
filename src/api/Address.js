@@ -20,7 +20,11 @@ firebase.initializeApp({
 
 export function getAddressList() {
     const address = firebase.database().ref('/addressList').once('value');
-    return address.then(resp => getAddressListSuccess(decorateAddressList(resp)));
+    return address.then(resp => getAddressListSuccess(decorateAddressList(resp)))
+                .catch(error => {
+                    alert('Website is upgrade, please comeback later !');
+                    console.log(error);
+                });
 }
 
 const getAddressListSuccess = (addressList) => {
@@ -43,7 +47,11 @@ const decorateAddressList = (resp) => {
 
 export function addAddressRow(formData) {
     return addAddress(formData, Guid())
-        .then(addAddressSuccess);
+        .then(addAddressSuccess)
+        .catch(error => {
+            alert('Website is upgrade, please comeback later !');
+            console.log(error);
+        });;
 }
 
 const addAddressSuccess = () => {
@@ -55,7 +63,11 @@ const addAddressSuccess = () => {
 
 export function deleteAddressRow(addressId) {
     return deleteAddress(addressId)
-        .then(deleteAddressSuccess);
+        .then(deleteAddressSuccess)
+        .catch(error => {
+            alert('Website is upgrade, please comeback later !');
+            console.log(error);
+        });;
 }
 
 const deleteAddress = (addressId) => {
@@ -72,7 +84,11 @@ const deleteAddressSuccess = () => {
 export function updateAddressRow(data) {
     let addressId = data.id || '';
     return addAddress(data, addressId)
-        .then(updateAddressSuccess);
+        .then(updateAddressSuccess)
+        .catch(error => {
+            alert('Website is upgrade, please comeback later !');
+            console.log(error);
+        });;
 }
 
 const updateAddressSuccess = () => {
