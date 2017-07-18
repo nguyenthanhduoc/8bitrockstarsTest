@@ -10,7 +10,7 @@ https://nguyenthanhduoc.herokuapp.com/
 $ git clone https://github.com/nguyenthanhduoc/8bitrockstarsTest.git
 $ cd 8bitrockstarsTest
 $ npm install
-$ npm run dev
+$ npm start
 $ Go to: http://localhost:8080/
 ```
 
