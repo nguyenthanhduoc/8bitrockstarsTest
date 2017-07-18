@@ -2,14 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
+    devtool: 'cheap-module-source-map',
 	entry: ['./main.jsx'],
 	output: {
         path: path.resolve(__dirname, 'build'),
 		publicPath: '/build/',
-		filename: 'index.js'
-	},
-    devServer: {
-		inline: true
+        filename: '[name].js',
+        chunkFilename: '[id].[chunkhash].js'
 	},
 	module: {
 		loaders: [
@@ -22,6 +21,16 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
 	plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendor',
+            minChunks: ({ context }) => context &&
+            context.indexOf('node_modules') > -1
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
